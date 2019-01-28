@@ -1,0 +1,33 @@
+
+        <nb-card class="col-md-12 col-lg-12 col-xxxl-12">
+                <nb-card-body>
+                  <nb-stepper orientation="horizontal">
+                    <nb-step [label]="labelOne">
+                      <ng-template #labelOne>Envie seu projeto</ng-template>
+                      <h3>Faça o upload do seu arquivo Lumion (7, 8 ou 9) para fazer uma cotação da renderização na nuvem</h3>
+                      <button nbButton disabled nbStepperNext>Voltar</button>
+                      <button nbButton nbStepperNext>Próximo</button>
+                    </nb-step>
+                    <nb-step [label]="labelTwo">
+                      <ng-template #labelTwo>Fazendo um orçamento</ng-template>
+                      <h3>Aguarde enquanto a gente prepara um orçamento e uma estimativa de tempo para renderizar o seu projeto</h3>
+                      <button nbButton nbStepperPrevious>Voltar</button>
+                      <button nbButton nbStepperNext>Próximo</button>
+                    </nb-step>
+                    <nb-step [label]="labelThree">
+                      <ng-template #labelThree>Orçamento</ng-template>
+                      <h3>Confirme se você deseja dar sequência na renderização</h3>
+                      <button nbButton nbStepperPrevious>Voltar</button>
+                      <button nbButton nbStepperNext>Próximo</button>
+                    </nb-step>
+                    <nb-step [label]="labelFour">
+                      <ng-template #labelFour>Pronto!</ng-template>
+                      <h3>Pronto! Agora é só aguardar enquanto a gente renderiza seu projeto. Você receberá uma notificação por e-mail quando o vídeo estiver pronto para download</h3>
+                      <button nbButton nbStepperPrevious>Voltar</button>
+                      <button nbButton disabled nbStepperNext>Experimente!</button>
+                    </nb-step>
+                  </nb-stepper>
+                </nb-card-body>
+              </nb-card>
+
+  

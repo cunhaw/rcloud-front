@@ -2,12 +2,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { PagesComponent } from './pages.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { EstimateComponent } from './estimate/estimate.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 
 const routes: Routes = [{
   path: '',
-  component: PagesComponent,
+  component: PagesComponent, 
   children: [{
+    path: 'how-it-works',
+    component: HowItWorksComponent,
+  },{
+    path: 'estimate', 
+    component: EstimateComponent,
+  },{
     path: 'ui-features',
     loadChildren: './ui-features/ui-features.module#UiFeaturesModule',
   }, {
@@ -30,7 +38,7 @@ const routes: Routes = [{
     loadChildren: './miscellaneous/miscellaneous.module#MiscellaneousModule',
   }, {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'how-it-works',
     pathMatch: 'full',
   }, {
     path: '**',
