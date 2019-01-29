@@ -14,5 +14,8 @@ import { EstimateComponent } from './estimate.component';
     
   ],
 })
-export class EstimateModule { }
+export class EstimateModule { 
+ 
+};
+}
  
